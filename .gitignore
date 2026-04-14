@@ -1,0 +1,4 @@
+# --- Artefatos de Compilação ---
+# O diretório target contém todos os binários, objetos e dependências compiladas.
+# É pesado e específico para cada máquina/SO. Jamais deve ser versionado.
+**/target/
