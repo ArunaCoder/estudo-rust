@@ -1,0 +1,26 @@
+# --- Artefatos de Compilação ---
+# O diretório target contém todos os binários, objetos e dependências compiladas.
+# É pesado e específico para cada máquina/SO. Jamais deve ser versionado.
+/target/
+
+# --- Backup de Edição ---
+# Arquivos gerados por editores como Vim (swp) ou outros que deixam rastros.
+*.rs.bk
+*.swp
+*.swo
+
+# --- Logs e Profiling ---
+# Se você usar ferramentas de tracing ou heap profiling.
+cargo-timing.html
+*.log
+
+# --- IDEs e Ambientes ---
+# Configurações locais de editores que não dizem respeito ao time.
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# --- Segurança (Opcional, mas recomendado) ---
+# Se você vir a usar arquivos de ambiente para chaves de API.
+.env

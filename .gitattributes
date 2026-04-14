@@ -1,0 +1,20 @@
+# Forçar que todos os arquivos de texto usem LF (padrão Unix)
+# Isso evita o problema de CRLF no Windows
+* text=auto eol=lf
+
+# Garantir que arquivos Rust sejam tratados como texto e usem UTF-8
+*.rs text eol=lf
+
+# Arquivos de configuração do Cargo
+*.toml text eol=lf
+*.lock text eol=lf
+
+# Garantir que arquivos shell script sejam sempre LF para não quebrarem no Linux
+*.sh text eol=lf
+
+# Definir arquivos binários explicitamente para o Git não tentar "corrigi-los"
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
